@@ -7,4 +7,7 @@ esbuild.build({
     outfile: "dist/webclip.js",
     format: "iife",
     target: "es2020"
-}).catch(() => process.exit(1));
+}).catch((err) => {
+  console.error(err);
+  process.exit(1);
+});
