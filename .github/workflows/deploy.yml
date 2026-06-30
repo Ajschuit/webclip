@@ -36,16 +36,10 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Prepare Pages artifact
-        run: |
-          mkdir -p public
-          cp dist/webclip.js public/
-          cp public/index.html public/ || true
-
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: dist
 
   deploy:
     needs: build

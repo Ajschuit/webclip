@@ -1,4 +1,7 @@
 const esbuild = require("esbuild");
+const fs = require("fs");
+
+fs.mkdirSync("dist", { recursive: true });
 
 esbuild.build({
     entryPoints: ["src/index.js"],
