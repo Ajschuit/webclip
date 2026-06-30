@@ -1,0 +1,20 @@
+{
+  "name": "webclip",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node esbuild.js",
+    "watch": "node esbuild.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mozilla/readability": "^0.6.0",
+    "turndown": "^7.2.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.1"
+  }
+}
